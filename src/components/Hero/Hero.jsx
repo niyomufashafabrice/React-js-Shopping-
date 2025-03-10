@@ -56,14 +56,14 @@ const Hero = () => {
       <Slider {...settings}>
         {ImageList.map((data) => (
           <div>
-          <div className='grid grid-cols-1 sm:grid-cols-2'>
+          <div className='grid grid-cols-1 sm:grid-cols-2 px-[10px]'>
             {/*text content section*/}
-            <div className='text-black flex flex-col justify-center gap-4 pt-12 sm:pt-0  text-center sm:text-left order-2 sm:order-1 relative z-10'>
+            <div className='text-black flex flex-col justify-center gap-4 pt-1 sm:pt-0  text-center sm:text-left order-2 sm:order-1 relative z-10'>
               <h1
               data-aos="zoom-out"
               data-aos-duration="500"
               data-aos-once="true"
-              className='text-5xl sm:text-6xl lg:text-7xl font-bold'>{data.title}</h1>
+              className='text-2xl sm:text-6xl lg:text-7xl font-bold'>{data.title}</h1>
               <p 
               data-aos="fade-up"
               data-aos-delay="100"

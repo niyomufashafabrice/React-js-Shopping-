@@ -6,7 +6,7 @@ import { RiTiktokLine } from "react-icons/ri";
 
 const Footer = () => {
   return (
-    <div className='bg-amber-100 flex justify-center items-center py-[80px] '>
+    <div className='bg-amber-100 flex justify-center items-center sm:pt-[80px] pt-[0px] sm:pb-[30px]  '>
       <div className="container text-black flex flex-col">
         {/*First section*/}
       <div className='grid grid-cols-1 sm:grid-cols-2 '>

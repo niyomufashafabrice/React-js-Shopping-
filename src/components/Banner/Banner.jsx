@@ -39,11 +39,11 @@ setIndex((prevIndex) => (prevIndex + 1) % imagex.length);
 };
 
   return (
-    <div className='flex justify-center items-center py-[80px]'>
+    <div className='flex justify-center items-center sm:py-[80px] py-[30px] px-[20px]'>
       <div className="container">
         <div className="grid grid-cols-1 sm:grid-cols-2">
-            <div className='flex flex-col justify-center items-center relative'>
-             <img className=' sm:w-[550px] sm:h-[600px] object-cover'  data-aos ="zoom-in" data-aos-duration="400" src={imagex[index]} alt="" />
+            <div className='flex flex-col justify-center items-center relative w-[100%]'>
+             <img className=' sm:w-[550px] sm:h-[600px] w-[100%] h-[400px] sm:object-cover object-contain'  data-aos ="zoom-in" data-aos-duration="400" src={imagex[index]} alt="" />
              <button data-aos="zoom-out"
              onClick={changeImage}
              className=' bg-radial-[at_50%_75%] from-sky-200 via-blue-400 to-indigo-900 to-90%

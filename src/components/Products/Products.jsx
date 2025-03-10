@@ -50,17 +50,17 @@ const ProductsData = [
 ];
 const Products = () => {
   return (
-    <div className='bg-white pt-[80px]'>
+    <div className='bg-white sm:pt-[80px] pt-[0px] pb-[0px] sm:pb-[0px] px-[10px] sm:px-0'>
      <div className='py-10'>
       {/*Header section*/}
       <div className='text-center mb-10 max-w-[600px] mx-auto'>
         <p data-aos="fade-up" className='text-sm text-amber-200'>Top Selling Products for you</p>
-        <h1 data-aos="fade-up" className='text-3xl font-bold'>Products</h1>
+        <h1 data-aos="fade-up" className='text-3xl font-bold text-black'>Products</h1>
         <p data-aos="fade-up" className='text-xs text-gray-400'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam necessitatibus perspiciatis quo!</p>
       </div>
       {/*Body section*/}
-      <div>
-        <div className='grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-4 md:grid-cols-4  place-items-center '>
+      <div className='sm:px-[80px] px-[10px]'>
+        <div className='grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 gap-4 md:grid-cols-4  place-items-center'>
 
              {/*Card section*/}
              {ProductsData.map((data) => (
@@ -68,8 +68,8 @@ const Products = () => {
                  
                  data-aos="fade-up"
                  data-aos-delay={data.aosDelay} 
-                 key={data.id} className='space-y-3 border border-amber-100'>
-                    <img src={data.img} alt="" className='h-[200px] w-[150px] object-cover rounded-md' />
+                 key={data.id} className='space-y-3 border border-amber-100 w-[100%] p-[10px]'>
+                    <img src={data.img} alt="" className='h-[200px] w-[100%] object-contain rounded-md' />
                     <div>
                         <h3 className='font-semibold text-black'>{data.title}</h3>
                         <p className='text-sm text-gray-600'>{data.author}</p>

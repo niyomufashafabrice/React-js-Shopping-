@@ -34,7 +34,7 @@ const ProductsData =[
 ]
 const TopProducts = () => {
   return (
-    <div className='bg-white pb-[80px] h-[650px] flex justify-center items-center '>
+    <div className='bg-white sm:pb-[80px] pb-[30px] sm:h-[650px] flex justify-center items-center '>
       <div className="container flex flex-col gap-[40px]">
         {/*Header section*/}
          <div className='text-center mb-24'>
@@ -43,12 +43,12 @@ const TopProducts = () => {
          <p data-aos="fade-up" className='text-xs text-gray-400'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam necessitatibus perspiciatis quo!</p>
          </div>
         {/*Body section*/}
-        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-20 place-items-center '>
+        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 sm:gap-20 gap-30 place-items-center '>
             
             {
                 ProductsData.map((data) =>(
-                    <div data-aos="zoom-in" className='rounded-2xl bg-white dark:bg-gray-800 hover:bg-black/80 dark:hover:bg-primary hover:text-white relative 
-                    shadow-xl duration-300 group max-w-[300px]'>
+                    <div key={data.id} data-aos="zoom-in" className='rounded-2xl bg-red-200 dark:bg-gray-800 sm:hover:bg-black/80 hover:bg-gray-900 dark:hover:bg-primary hover:text-white relative 
+                    shadow-5xl duration-300 group max-w-[300px]'>
                          {/*image section*/}
                          <div className="h-[150px]">
                             <img src={data.img} alt=""
