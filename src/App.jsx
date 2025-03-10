@@ -22,7 +22,7 @@ React.useEffect(() => {
 }, []);
 
   return (
-    <div className=''>
+    <div className='overflow-x-hidden box-border'>
       <Navbar />
       <Hero />
       <Products />
