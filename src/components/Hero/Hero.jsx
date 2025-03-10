@@ -45,8 +45,8 @@ const Hero = () => {
     
 
   return (
-    <div className='relative overflow-hidden min-h-[550px] sm:min-h-[650px] sm:bg-white bg-red-500 flex justify-center items-center
-    dark:bg-red-500 dark:text-white  duration-200'>
+    <div className='relative overflow-hidden min-h-[550px] sm:min-h-[650px] bg-gray-100 flex justify-center items-center
+    dark:bg-gray-100 dark:text-white  duration-200'>
         {/*background pattern*/}
     <div className='h-[700px] w-[700px] bg-amber-100 absolute -top-1/2 right-0 rounded-3xl rotate-45'>
 
