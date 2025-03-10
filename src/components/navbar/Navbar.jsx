@@ -62,7 +62,7 @@ const [isDropdownOpen, setIsDropdownOpen] = useState(false);
         </div>
       </div>
       {/*Lower Navbar*/}
-      <div className='text-black flex justify-end sm:justify-center px-[10px] sm:px-0'>
+      <div className='text-black flex justify-end sm:justify-center px-[10px] sm:px-0 bg-white'>
 
       {/* Toggle Button (Mobile) */}
       <button
